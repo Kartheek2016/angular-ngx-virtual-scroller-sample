@@ -1,0 +1,12 @@
+<virtual-scroller #scroll [items]="items" 
+  (vsUpdate)="onVsUpdate($event)"
+  (vsChange)="onVsChange($event)"
+  (vsStart)="onVsStart($event)"
+  (vsEnd)="onVsEnd($event)"
+>
+    <div *ngFor="let item of scroll.viewPortItems">
+      <div class="bottomBorder" *ngIf="item.content" [innerHTML]="item.content  | safe: 'html'"></div>
+    </div>
+</virtual-scroller>
+
+<button (click)="appendData()">append data</button>

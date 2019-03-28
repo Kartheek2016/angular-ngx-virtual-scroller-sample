@@ -1,0 +1,16 @@
+p {
+  font-family: Lato;
+}
+virtual-scroller {
+  height: 500px;
+}
+
+virtual-scroller div {
+  background-color: #eee;
+  padding: 5px;
+}
+
+.bottomBorder {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
